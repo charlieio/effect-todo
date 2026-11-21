@@ -1,0 +1,84 @@
+.notes-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 24px 64px;
+  text-align: left;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.lede {
+  margin-top: -12px;
+  color: var(--text);
+}
+
+.note-form {
+  display: grid;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.note-form input {
+  font: inherit;
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.note-form input:focus-visible,
+.notes-toolbar button:focus-visible,
+.note-form button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.note-form button,
+.notes-toolbar button {
+  font: inherit;
+  cursor: pointer;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  width: fit-content;
+}
+
+.note-form button:disabled,
+.notes-toolbar button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  max-width: 520px;
+}
+
+.notes-list li {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: grid;
+  gap: 4px;
+}
+
+.notes-list strong {
+  color: var(--text-h);
+}
+
+.notes-list .empty {
+  color: var(--text);
+  border-style: dashed;
+}
+
+.error {
+  color: #b42318;
+}
